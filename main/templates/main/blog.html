@@ -1,0 +1,17 @@
+{% extends "main/layouts/base.html" %}
+
+{% load main_components_extras %}
+
+
+{% block top %}
+
+{% banner 'Blogs & News' 'Blogs' %}
+
+{% endblock top %}
+
+
+{% block container %}
+
+{% blog_list %}
+
+{% endblock container %}

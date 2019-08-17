@@ -1,0 +1,32 @@
+{% load main_components_extras %}
+<header>
+  <div class="container">
+    <!-- hidden top area toggle link -->
+    <div id="header-hidden-link">
+      <a href="#" class="toggle-link" title="Click me you'll get a surprise" data-target=".hidden-top"><i></i>Open</a>
+    </div>
+    <!-- end toggle link -->
+    <div class="row nomargin">
+      <div class="span12">
+        <div class="headnav">
+          <ul>
+            <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+            <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
+          </ul>
+        </div>
+        <!-- Signup Modal -->
+        {% sign_up %}
+        <!-- end signup modal -->
+        <!-- Sign in Modal -->
+        {% sign_in %}
+        <!-- end signin modal -->
+        <!-- Reset Modal -->
+        {% reset %}
+        <!-- end reset modal -->
+      </div>
+    </div>
+    <div class="row">
+      {% navbar %}
+    </div>
+  </div>
+</header>

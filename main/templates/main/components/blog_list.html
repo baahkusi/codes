@@ -1,0 +1,13 @@
+{% load main_components_extras %}
+
+<div class="row">
+    <div class="span4">
+        {% sidebar %}
+    </div>
+    <div class="span8">
+        {% article 'This is the first article' %}
+        {% article 'This is the second article' %}
+        {% article 'And yet another article' %}
+        {% pager %}
+    </div>
+</div>

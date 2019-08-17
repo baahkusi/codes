@@ -1,0 +1,72 @@
+{% load static %}
+<div class="span4">
+	<div class="logo">
+		<a href="index.html"><img src="{% static 'img/logo.png' %}" alt="" class="logo" /></a>
+		<h1>Come code your dreams with us.</h1>
+	</div>
+</div>
+<div class="span8">
+	<div class="navbar navbar-static-top">
+		<div class="navigation">
+			<nav>
+				<ul class="nav topnav">
+					<li class="dropdown">
+						<a href="">Home<i class="icon-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'blog' %}">Blog & News</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="{% url 'about' %}">About Us <i class="icon-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'about' %}">About us</a></li>
+							<li><a href="#">Mission & Motivation</a></li>
+							<li><a href="#">Yearly Reports</a></li>
+							<li><a href="#">History</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Join Us <i class="icon-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'join' %}#volunteer">Volunteer as Instructor</a></li>
+							<li><a href="{% url 'join' %}#learn">Learn to Code Free</a></li>
+							<li><a href="{% url 'join' %}#sponsor">Sponsor</a></li>
+							<li><a href="{% url 'join' %}#tee">Buy a T-Shirt</a></li>
+							<li><a href="{% url 'join' %}#hub">Join or Start a Hub</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Extra Services <i class="icon-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'services' %}#web">Website Development</a></li>
+							<li><a href="{% url 'services' %}#biz">Business Softwares</a></li>
+							<li><a href="{% url 'services' %}#dat">Data Analysis</a></li>
+							<li><a href="{% url 'services' %}#workshops">IT Workshops (Companies and Schools)</a></li>
+							<li><a href="{% url 'services' %}#hire">Looking for Programmers ?</a></li>
+							<li><a href="{% url 'services' %}#more">More ...</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Events <i class="icon-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'events' %}#coding">Upcomming Coding Classes</a></li>
+							<li><a href="{% url 'events' %}#talks">Upcomming Talks & Seminars</a></li>
+							<li><a href="{% url 'events' %}#confs">Upcomming Conferences</a></li>
+							<li><a href="{% url 'events' %}#other">Other Events</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Resources <i class="icon-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">student projects</a></li>
+							<li><a href="#">code-s projects</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- end navigation -->
+	</div>
+</div>
